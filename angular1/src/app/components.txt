@@ -1,0 +1,4 @@
+Component:
+create a Component
+register it in a module
+Add an elemnt in a HTML mark-up
