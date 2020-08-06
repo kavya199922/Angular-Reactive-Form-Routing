@@ -1,4 +1,4 @@
-import { ValidateFormsComponent } from './validateforms.component';
+import { ValidateFormsComponent } from './validateforms.component'
 import { TodolistComponent } from './todolist.component';
 import { StaffComponent } from './staff.component';
 import { StudentComponent } from './student.component';

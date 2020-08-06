@@ -1,0 +1,11 @@
+<div class='container'>
+    <form [formGroup]='signupForm'>
+        <div class='form-group'>
+            <label for='Firstname'>First Name</label>
+            <input type='text' class='form-control' formControlName='fname' id='FirstName'>
+            <span *ngIf="signupForm.controls['fname'].hasError('required')">First Name is required</span>
+            <span *ngIf="signupForm.controls['fname'].hasError('minlength')">Length must be greater than or equal to 2</span>
+        </div>
+        <button type='submit' [disabled]="!signupForm.valid">Submit</button>
+        </form>
+</div>
