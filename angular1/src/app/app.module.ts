@@ -1,3 +1,4 @@
+import { StudentComponent } from './student.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,7 +11,7 @@ import {CheckComponent} from './check.component'
 
 @NgModule({
   declarations: [
-    AppComponent,CheckComponent
+    AppComponent,CheckComponent,StudentComponent
   ],
   imports: [
     BrowserModule,
