@@ -1,0 +1,36 @@
+
+<div class='container'>
+    <form>
+
+        <h1>{{Title}}</h1>
+        <div class="form-group">
+          <label for="Taskname">Add Task</label>
+          <input type="text" class="form-control" id="Taskname" placeholder="Add New Task" #newItem>
+        </div>
+       
+        <button type="submit" class="btn btn-primary" (click)="addItem(newItem.value);newItem.value='' "  >Submit</button>
+        
+      </form>
+    </div>
+      <div class='container'>
+        <br/>
+        <table style='border:2px solid black'>    
+        <tr *ngFor="let i of items_list">
+                <td>
+                 {{i.itemname}}
+                  <!-- <li *ngFor="let i of items_list">{{i.itemname}}</li> -->
+                
+                </td>
+                <td>
+                  <button  class='btn btn-primary' (click)="RemoveItem(i)">Delete</button>
+                </td>
+                
+            </tr>
+           
+          </table>     
+     
+    
+</div>
+
+
+  
