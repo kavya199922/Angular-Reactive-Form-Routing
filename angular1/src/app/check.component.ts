@@ -8,6 +8,6 @@ template:'<h1>{{property1}}</h1>'
 })
 export class CheckComponent{
     //property
-    property1='hello'
+    property1='hello from check component'
    
 }

@@ -2,3 +2,10 @@ Component:
 create a Component
 register it in a module
 Add an elemnt in a HTML mark-up
+
+Service:
+create a Service
+pass it in the constructor of the list of components you want to use the service in it
+register the service by including it  in provider[] and also import it(auto-import)
+(whenever a service is registered,only single instance of service is created and its used by all components:singleton pattern)
+
