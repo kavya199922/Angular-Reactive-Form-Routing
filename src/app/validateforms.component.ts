@@ -28,7 +28,7 @@ export class ValidateFormsComponent  {
         })
     }
     postData(){
-        this.http.post('http://127.0.0.1:4000/'+this.fname+'/'+this.email+'/'+this.password,null).toPromise().then((data:any)=>{
+        this.http.post('http://127.0.0.1:5000/'+this.fname+'/'+this.email+'/'+this.password,null).toPromise().then((data:any)=>{
             // this.jsonData=(data.json)
             
             console.log(data)
