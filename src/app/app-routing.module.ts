@@ -1,3 +1,5 @@
+import { Success } from './successreg.component';
+import { PostdataComponent } from './postdata.component';
 import { ValidateFormsComponent } from './validateforms.component'
 import { TodolistComponent } from './todolist.component';
 import { StaffComponent } from './staff.component';
@@ -12,7 +14,9 @@ const routes: Routes = [
  { path:'Student',component:StudentComponent},
   {path:'Staff',component:StaffComponent},
   {path:'todolist',component:TodolistComponent},
-  {path:'forms',component:ValidateFormsComponent}
+  {path:'forms',component:ValidateFormsComponent},
+  {path:'HTTPmethods',component:PostdataComponent},
+  {path:'success',component:Success}
 ];
 
 

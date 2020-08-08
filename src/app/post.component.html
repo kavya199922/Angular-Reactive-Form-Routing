@@ -1,0 +1,32 @@
+<div style="padding: 50px;">
+    <h1>HTTP Methods</h1>
+<form>
+    <div class='form-group'>
+    <label>Enter id</label>
+    <input type='text'  class='form-control' [(ngModel)]="id" [ngModelOptions]="{standalone: true}" >
+    </div>
+
+    <div class='form-group'>
+    <label>Enter  dept name</label>
+    <input type='text' [(ngModel)]="name" class='form-control' [ngModelOptions]="{standalone: true}"><br/>
+                 <!-- Get -->
+                </div>
+  <button class="btn btn-primary " style="margin: 4px 2px;" type='submit' (click)="getData()">Get</button>
+                <!-- Post -->
+<button class="btn btn-primary"  type='submit'  style="margin: 4px 2px;" (click)="postData()">Post</button>
+                   <!-- Put -->
+<button class="btn btn-primary " type='submit' style="margin: 4px 2px;"  (click)="putData()">Put</button>
+                 <!-- Delete -->
+<button class="btn btn-primary " type='submit' style="margin: 4px 2px;"  (click)="deleteData()">Delete</button>
+  
+<button class="btn btn-primary " type='submit' style="margin: 4px 2px;"  (click)="getAllData()">Delete</button>
+<!-- To display -->
+<div *ngIf="div1">
+<ul>
+        <li *ngFor="let i of jsonData">{{i}}</li>
+    </ul>
+</div>
+
+</form>
+
+</div>

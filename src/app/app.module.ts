@@ -1,3 +1,4 @@
+import { Success } from './successreg.component';
 import { ValidateFormsComponent } from './validateforms.component';
 import { TodolistComponent } from './todolist.component';
 import { PostdataComponent } from './postdata.component';
@@ -16,7 +17,7 @@ import {CheckComponent} from './check.component'
 
 @NgModule({
   declarations: [
-    AppComponent,CheckComponent,StudentComponent,PostdataComponent,TodolistComponent,ValidateFormsComponent
+    AppComponent,CheckComponent,StudentComponent,PostdataComponent,TodolistComponent,ValidateFormsComponent,Success
   ],
   imports: [
     BrowserModule,
