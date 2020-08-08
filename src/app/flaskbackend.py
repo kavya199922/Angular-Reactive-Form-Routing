@@ -38,7 +38,7 @@ mysql.init_app(app)
 api = Api(app)
 
 #post
-@app.route('/post/<string:name>/<string:email>/<string:password>',methods=['GET','POST'])
+@app.route('/<string:name>/<string:email>/<string:password>',methods=['GET','POST'])
 def post(name,email,password):
        
         conn = mysql.connect()
