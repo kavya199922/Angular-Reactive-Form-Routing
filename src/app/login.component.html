@@ -1,0 +1,15 @@
+<div class="container">
+    <label>Enter mobile number</label>
+    <input type="number" [(ngModel)]="phno" name='phno'>
+    <button (click)="checkLogin()">Login</button>
+</div>
+<div *ngIf=user>
+    <p>user</p>
+
+</div>
+<div **ngIf="admin">
+    <p>admin</p>
+    <div *ngFor="let i of data | keyvalue">
+        {{i.key}}:{{i.value}}
+      </div>
+</div>

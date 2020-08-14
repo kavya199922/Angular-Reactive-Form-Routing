@@ -1,14 +1,14 @@
 <div style="padding: 50px;">
     <h1>HTTP Methods</h1>
 <form>
-    <div class='form-group'>
+    <div >
     <label>Enter id</label>
-    <input type='text'  class='form-control' [(ngModel)]="id" [ngModelOptions]="{standalone: true}" >
+    <input type='text'  [(ngModel)]="id"  >
     </div>
 
-    <div class='form-group'>
+    <div>
     <label>Enter  dept name</label>
-    <input type='text' [(ngModel)]="name" class='form-control' [ngModelOptions]="{standalone: true}"><br/>
+    <input type='text' [(ngModel)]="name"  ><br/>
                  <!-- Get -->
                 </div>
   <button class="btn btn-primary " style="margin: 4px 2px;" type='submit' (click)="getData()">Get</button>

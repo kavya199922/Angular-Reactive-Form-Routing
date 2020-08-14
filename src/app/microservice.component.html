@@ -1,0 +1,43 @@
+
+    <h1>HTTP Methods-Microservice</h1>
+
+    
+    <label>Enter name</label>
+    <input type='text' [(ngModel)]='name' name='name' >
+    <p>{{name}}</p>
+    
+
+   
+<!-- pwd -->
+
+    <label>Enter password</label>
+    <input type='text'  [(ngModel)]="password" name="password"  [ngModelOptions]="{standalone:true}"  ><br/>
+    <p>{{password}}</p>
+<!-- email -->
+<label>Enter email</label>
+<input type='text' [(ngModel)]='email' name='email' >
+<p>{{email}}</p>
+               
+    
+    
+    
+    
+    Get 
+               
+  <button class="btn btn-primary " style="margin: 4px 2px;" type='submit' (click)="getData()">Get</button>
+                <!-- Post -->
+<button class="btn btn-primary"  type='submit'  style="margin: 4px 2px;" (click)="postData()">Post</button> 
+
+<button routerLink='any'>Update</button>
+<router-outlet></router-outlet>
+
+                 
+<!-- To display -->
+<div >
+
+</div>
+
+
+
+
+

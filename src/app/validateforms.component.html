@@ -3,7 +3,7 @@
         <!-- Username -->
         <div class='form-group'>
             <label for='Firstname'>First Name</label>
-            <input type='text' class='form-control' formControlName='fname' id='FirstName'  [(ngModel)]='fname' >
+            <input type='text' class='form-control' formControlName='fname' id='FirstName'   >
             <span *ngIf="signupForm.controls['fname'].hasError('required')">First Name is required</span>
             <span *ngIf="signupForm.controls['fname'].hasError('minlength')">Length must be greater than or equal to 2</span>
         </div>
@@ -11,7 +11,7 @@
           <!-- Password -->
         <div class='form-group'>
             <label for='Password'>Password</label>
-            <input type='password' class='form-control' formControlName='password' id='password'  [(ngModel)]='password' >
+            <input type='password' class='form-control' formControlName='password' id='password'   >
             <span *ngIf="signupForm.controls['password'].hasError('required')">Password is required</span>
             <span *ngIf="signupForm.controls['password'].hasError('minlength')">Length must be greater than or equal to 8</span>
         </div>
@@ -19,7 +19,7 @@
           <!-- Email -->
         <div class='form-group'>
             <label for='email'>Email</label>
-            <input type='email' class='form-control' formControlName='email' id='email' [(ngModel)]='email' >
+            <input type='email' class='form-control' formControlName='email' id='email'  >
             <span *ngIf="signupForm.controls['email'].hasError('required')">email is  required</span>
             <span *ngIf="signupForm.controls['email'].hasError('email')">Enter a valid e-mail</span>
         </div>

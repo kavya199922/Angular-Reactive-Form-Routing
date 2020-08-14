@@ -53,6 +53,17 @@ def post(name,email,password):
         conn.close()
         details = {'name': name, 'email': email,'password':password}
         return details,201
+#get
+@app.route('/get/<string:name>',methods=['GET','POST'])
+def get(name):
+      conn = mysql.connect()
+      cursor = conn.cursor()
+      getall_query='select * from customerdata where customername=%s'
+      cursor.execute(getall_query,[(name)])
+      result=cursor.fetchone()
+      details={'name':result[0],'email':result[1],'password':result[2]}
+      conn.close()
+      return details,201
 
 
  
